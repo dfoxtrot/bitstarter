@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var buffer = new Buffer(fs.readFile(index.html));
+var buffer = new Buffer(fs.readFile(index.html),"utf-8");
 app.use(express.logger());
 
 app.get('/', function(request, response) {
