@@ -21,7 +21,17 @@ References:
    - https://developer.mozilla.org/en-US/docs/JSON#JSON_in_Firefox_2
 */
 
+
+
+
+var rest = require('restler');
+
+
+
+
 var fs = require('fs');
+
+
 var program = require('commander');
 var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
