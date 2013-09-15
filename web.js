@@ -6,7 +6,6 @@ var buffer2 = fs.readFileSync('index.html');
 var texte = buffer2.toString('utf-8');
 app.use(express.logger());
 
-
 app.get('/', function(request, response) {
   response.send(texte);
 });
